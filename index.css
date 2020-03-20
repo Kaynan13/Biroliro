@@ -1,0 +1,75 @@
+@font-face {
+  font-family: LemonMilk;
+  src: url(LEMONMILK-Bold.otf);
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#171727, #101114);
+}
+body main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+body main .title {
+  font-family: LemonMilk;
+  font-size: 80px;
+  color: #fff;
+  margin-top: 20px;
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  z-index: 9;
+}
+body main .talkei {
+  position: absolute;
+  font-family: LemonMilk;
+  color: #000;
+  font-size: 500px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  opacity: 0.03;
+}
+body main .biroliro {
+  width: 80%;
+  height: 100vh;
+  z-index: 99999;
+  position: relative;
+}
+body main .biroliro .mask {
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background-image: url(mask.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  position: absolute;
+  margin-left: -50px;
+}
+body main .biroliro .body {
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  background-image: url(binoliro.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  position: absolute;
+}
+body main .biroliro .eyes {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-image: url(birolirozoio.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  margin: 0 0 0 -10px;
+}
